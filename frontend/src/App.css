@@ -1,0 +1,159 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  margin: 0px;
+  padding: 20px;
+  background-color: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styling for the FeedbackForm container */
+.feedback-form {
+  width: 100%;
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: right; 
+}
+
+.feedback-form h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  resize: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.feedback-form textarea:focus {
+  border: 2px solid #2575fc;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 106, 138, 0.683);
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.feedback-form button:hover {
+  background-color: #6a11cb;
+  transform: scale(1.05);
+}
+
+.feedback-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feedback-form li {
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success feedback message */
+.success {
+  background-color: #d4edda;  
+  color: #155724;             
+  font-weight: bold;
+  border: 1px solid #c3e6cb;  
+  text-align: left;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Error feedback message */
+ .error {
+  background-color: #f8d7da; 
+  color: #c73948;            
+  font-weight: bold;
+  border: 1px solid #f5c6cb; 
+  text-align: center;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Hover effect for feedback messages */
+.feedback-form li:hover {
+  transform: scale(1.03);
+}
+
+/* Last list item should have no border */
+.feedback-form li:last-child {
+  border-bottom: none;
+}
+
+
+.feedback-list {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: right; 
+}
+
+.feedback-list h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.feedback-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feedback-list li {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  text-align: right; 
+}
+
+.feedback-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.feedback-list li:last-child {
+  border-bottom: none;
+}
